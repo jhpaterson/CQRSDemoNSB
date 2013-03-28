@@ -1,0 +1,16 @@
+﻿@model CQRSDemo.ReadModelAC.CustomerReadModel
+
+@{
+    ViewBag.Title = "Confirm Edit";
+}
+
+<h2>Confirm Edit</h2>
+
+<p>Updated customer address to: @Model.Address, @Model.PostCode</p>
+<p>(Actually, we haven't done it yet. This will probably work, but if for some 
+    reason we are not able to do the update we will let you know by pigeon post
+    and you can decide what to do about it then)
+</p>
+<p> @Html.ActionLink("Go to list", "Index") (note that there is a possibility that the
+    list page may not show the update, as it may be getting a stale view of the data)
+</p>

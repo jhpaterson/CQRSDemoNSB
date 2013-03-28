@@ -1,0 +1,16 @@
+﻿@model CQRSDemo.ReadModelAC.CustomerReadModel
+
+@{
+    ViewBag.Title = "Confirm Create";
+}
+
+<h2>Confirm Create</h2>
+
+<p>Created new customer @Model.FirstName @Model.LastName</p>
+<p>(Actually, we haven't done it yet. This will probably work, but if for some 
+    reason we are not able to create the new customer we will let you know by email
+    and you can decide what to do about it then)
+</p>
+<p> @Html.ActionLink("Go to list", "Index") (note that there is a possibility that the
+    list page may not show the new customer, as it may be getting a stale view of the data)
+</p>
